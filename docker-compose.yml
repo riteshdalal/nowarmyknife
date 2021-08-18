@@ -1,0 +1,20 @@
+# Use root/example as user/password credentials
+version: '3.1'
+services:
+
+  web:
+    build: .
+    user: "node"
+    working_dir: /usr/src/app
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    ports:
+      - 9000:9000
+      - 8999:8999
+    environment: 
+      - PORT=9000
+      - LIVERELOAD_PORT=8999
+      - NODE_ENV=development
+      - APP_NAME=NowArmyKnife
+    command: "npm run dev"
