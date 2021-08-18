@@ -1,4 +1,4 @@
-var Test = function (exports) {
+var NowArmyKnife = function (exports) {
   'use strict';
 
   function test() {
