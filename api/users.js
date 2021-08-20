@@ -5,5 +5,5 @@ var router = Router();
 
 /* GET users listing. */
 router.get('/users', function(req, res, next) {
-  res.send({ 'message': 'Hello Bob' });
+  res.send({ 'message': 'Hello Sarah' });
 });
